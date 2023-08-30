@@ -1,0 +1,11 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #0271e1;
+  background: transparent;
+
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}

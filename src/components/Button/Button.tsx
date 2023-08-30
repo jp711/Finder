@@ -1,9 +1,17 @@
+import React from "react";
+import styles from "./Button.module.css";
+
 interface ButtonProps {
-  content: string;
+  children: React.ReactNode;
+  onClick: () => void;
 }
 
-function Button({ content }: ButtonProps) {
-  return <button>{content}</button>;
+function Button({ children, onClick }: ButtonProps) {
+  return (
+    <button onClick={onClick} className={styles.button}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;

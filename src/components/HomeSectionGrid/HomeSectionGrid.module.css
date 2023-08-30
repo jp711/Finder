@@ -1,4 +1,23 @@
 .grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #0271e1;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonText {
+  font-size: 1.6rem;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
 }
