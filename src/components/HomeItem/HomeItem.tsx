@@ -2,7 +2,6 @@ import styles from "./HomeItem.module.css";
 
 interface HomeItemProps {
   title: string;
-  //   icon: string;
 }
 
 function HomeItem({ title }: HomeItemProps) {

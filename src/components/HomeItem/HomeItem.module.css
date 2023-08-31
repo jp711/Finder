@@ -10,11 +10,10 @@
   border-color: #e3e5e8;
   text-decoration: none;
   outline: none;
-
-  width: 17rem;
+  margin-bottom: 2.4rem;
   height: 10.5rem;
-
-  flex-basis: 16%;
+  /* flex-basis: 16%; */
+  width: 15%;
 }
 
 .link:hover {
@@ -34,3 +33,21 @@
   color: #0271e1;
   margin: 0;
 }
+
+/* @media (min-width: 961px) {
+  .link {
+    width: 15%;
+  }
+}
+
+@media (min-width: 601px) {
+  .link {
+    width: 22%;
+  }
+}
+
+@media (max-width: 601px) {
+  .link {
+    width: 35%;
+  }
+} */

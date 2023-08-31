@@ -1,26 +1,52 @@
+import { useState } from "react";
 import Button from "../Button/Button";
 import HomeItem from "../HomeItem/HomeItem";
 import styles from "./HomeSectionGrid.module.css";
 
 function HomeSectionGrid() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleClick = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <>
       <div className={styles.grid}>
         <HomeItem title="Credit card" />
         <HomeItem title="Credit card" />
-
         <HomeItem title="Credit card" />
         <HomeItem title="Credit card" />
         <HomeItem title="Credit card" />
         <HomeItem title="Credit card" />
       </div>
+      {isExpanded && (
+        <div className={styles.grid}>
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+          <HomeItem title="Credit card" />
+        </div>
+      )}
+
       <div className={styles.buttonContainer}>
-        <Button
-          onClick={() => {
-            console.log("toggle items");
-          }}
-        >
-          <span className={styles.buttonText}>Show more categories</span>
+        <Button onClick={handleClick}>
+          <span className={styles.buttonText}>
+            {isExpanded ? "Show less categories" : "Show more categories"}
+          </span>
           <svg
             className={styles.icon}
             viewBox="0 0 24 24"
