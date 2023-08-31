@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* jak tego nie ma to po naciśnięciu na guzik się rusz wszytko  */
-  max-width: 76rem;
+
+  max-width: 110rem;
+  gap: 0.8rem;
 }
 
 .icon {
