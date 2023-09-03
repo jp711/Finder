@@ -4,45 +4,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
   border: 1px solid;
   border-radius: 1.6rem;
-  border-color: #e3e5e8;
+  border-color: var(--border-color);
   text-decoration: none;
   outline: none;
-  margin-bottom: 2.4rem;
   height: 10.5rem;
-  /* flex-basis: 16%; */
-  width: 15%;
 }
 
 .link:hover {
-  border-color: #0271e1;
+  border-color: var(--primary-color);
 }
 
 .icon {
   width: 4rem;
   height: 4rem;
-  fill: #0271e1;
+  fill: var(--primary-color);
 }
 
 .title {
-  font-family: "Roboto", Arial, sans-serif;
   font-size: 1.6rem;
-  font-weight: 500;
-  color: #0271e1;
+  font-weight: bold;
+  color: var(--primary-color);
   margin: 0;
   text-align: center;
-}
-
-@media (max-width: 600px) {
-  .link {
-    width: 42%;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 960px) {
-  .link {
-    width: 21%;
-  }
+  padding: 0 1rem;
 }

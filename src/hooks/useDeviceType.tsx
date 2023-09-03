@@ -5,7 +5,6 @@ export enum DeviceType {
   TABLET = "tablet",
   MOBILE = "mobile",
 }
-
 export const DEVICE_RANGE = {
   [DeviceType.DESKTOP]: [961, 10000],
   [DeviceType.TABLET]: [601, 960],
